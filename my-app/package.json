@@ -9,13 +9,14 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-id-generator": "^3.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-     "deploy": "npm run build && npm run copy-files && gh-pages -d build",
+    "deploy": "npm run build && npm run copy-files && gh-pages -d build",
     "copy-files": "cp -r build/* .",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
