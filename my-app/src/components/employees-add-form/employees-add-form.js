@@ -21,6 +21,10 @@ class EmployeesAddForm extends Component {
   addEmployee = (e) => {
     e.preventDefault();
     const { name, salary } = this.state;
+    if (name === "" && salary === "") {
+      alert("Введіть ім`я співробітника і його зарплату");
+      return;
+    }
 
     const employeeData = {
       name,
